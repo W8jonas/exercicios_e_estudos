@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int salario ;
+
+    cout << "Digite o salario: " << endl;
+    cin >> salario;
+
+    if (salario > 400) {
+        salario = salario * 1.30;
+        cout << "O novo salario sera de: " << salario << endl;
+    }
+    
+    if ((salario <= 400) & (salario > 300)) {
+        salario = salario * 1.25;
+        cout << "O novo salario sera de: " << salario << endl;
+    }
+    
+    if ((salario <= 300) & (salario > 200)) {
+        salario = salario * 1.2;
+        cout << "O novo salario sera de: " << salario << endl;
+    }
+    
+    if (salario < 200) {
+        salario = salario * 1.1;
+        cout << "O novo salario sera de: " << salario << endl;
+    }
+    
+}

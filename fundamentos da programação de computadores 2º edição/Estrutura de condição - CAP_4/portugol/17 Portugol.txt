@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+valor: real
+
+inicio
+
+escreval("Digite a senha: ")
+leia(valor)
+
+se valor = 4531 entao
+   escreval("Senha correta")
+senao
+   escreval("Senha incorreta")
+fimse
+
+fimalgoritmo
+

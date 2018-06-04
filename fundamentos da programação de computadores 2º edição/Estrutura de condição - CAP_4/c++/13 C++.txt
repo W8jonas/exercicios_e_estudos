@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int valor ;
+
+    cout << "Digite o valor do produto: " << endl;
+    cin >> valor;
+
+    if (valor < 50){
+        valor = valor * 1.05;
+    }
+    if ((valor > 50) & (valor < 100)){
+        valor = valor * 1.10;
+    }
+    if (valor > 100) {
+        valor = valor * 1.15;
+    }
+
+
+    if (valor < 200) {
+        cout << "O valor do produto e " << valor << " e sua classificacao e: Muito caro";
+    }
+    if ((valor > 120) & (valor <= 200)) {
+        cout << "O valor do produto e " << valor << " e sua classificacao e:  caro";
+    }
+    if ((valor > 80) & (valor <= 120)) {
+        cout << "O valor do produto e " << valor << " e sua classificacao e: Normal";
+    }
+    if (valor > 80) {
+        cout << "O valor do produto e " << valor << " e sua classificacao e: Barato";
+    }
+}

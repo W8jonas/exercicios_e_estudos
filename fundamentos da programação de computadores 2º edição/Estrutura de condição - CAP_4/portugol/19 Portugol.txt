@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+
+altura: real
+sexo: literal
+
+
+inicio
+
+escreval("Digite a altura: ")
+leia(altura)
+escreval("Digite o sexo: ")
+leia(sexo)
+
+se sexo = "M" entao
+   escreval("Seu peso ideal é", (72.7*altura)-58)
+senao
+   escreval("Seu peso ideal é", (62.1*altura)-44.7)
+fimse
+
+fimalgoritmo

@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int salario ;
+
+    cout << "Digite o salario: " << endl;
+    cin >> salario;
+
+    if (salario < 500) {
+        salario = salario * 1.3;
+        cout << "O novo salario sera de: " << salario << endl;
+
+    }else{
+        cout << "Nao tem direito ao aumento" << endl;
+    }
+
+}

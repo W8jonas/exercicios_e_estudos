@@ -1,0 +1,7 @@
+ingresso = 5
+vendas = 120
+for contador in range(1, 10):
+    lucro = ingresso * vendas - 200
+    print(f' O lucro será de {lucro}, com ingresso igual a {ingresso} com {vendas} vendas. ')
+    ingresso = ingresso - 0.5
+    vendas = vendas + 26

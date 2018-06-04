@@ -1,0 +1,31 @@
+
+algoritmo "semnome"
+var
+ total_vista, total_prazo, total, valor, total_primeira_prestacao : real
+ i : inteiro
+ codigo : literal
+
+inicio
+
+para i de 1 ate 15 faca
+   escreva("Digite o codigo da transação: ")
+   leia(codigo)
+   escreva("Digite o valor da transação: ")
+   leia(valor)
+   
+   se codigo = "V" entao
+      total_vista <- total_vista + valor
+   fimse
+   se codigo = "P" entao
+      total_prazo <- total_prazo + valor
+      total_primeira_prestacao <- total_primeira_prestacao + valor / 3
+   fimse
+fimpara
+
+escreval("O valor total das compras a vista é: ", total_vista)
+escreval("O valor total das compras a prazo é: ", total_prazo)
+escreval("O valor total das compras é: ", total_prazo + total_vista)
+escreval("O valor total das primeiras parcelas é: ", total_primeira_prestacao)
+
+fimalgoritmo
+

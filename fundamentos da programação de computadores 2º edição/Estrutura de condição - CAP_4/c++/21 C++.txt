@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int codigo;
+    cout << "Digite o codigo: " << endl;
+    cin >> codigo;
+
+    if (codigo == 1){
+        cout << "Sul";
+    }
+    if (codigo == 2){
+        cout << "Norte";
+    }
+    if (codigo == 3){
+        cout << "Leste";
+    }
+    if (codigo == 4){
+        cout << "Oeste";
+    }
+    if ((codigo == 5) | (codigo == 6)){
+        cout << "Nordeste";
+    }
+    if ((codigo >= 7) & (codigo <=9)){
+        cout << "Sudeste";
+    }
+    if ((codigo >= 10) & (codigo <=20)){
+        cout << "Centro-oeste";
+    }
+    if ((codigo >= 20) & (codigo <=30)){
+        cout << "Nordeste";
+    }
+}

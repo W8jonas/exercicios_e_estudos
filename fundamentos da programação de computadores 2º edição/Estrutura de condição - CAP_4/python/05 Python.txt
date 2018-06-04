@@ -1,0 +1,25 @@
+num1 = int(input(print('Escolha a operação: ')))
+num2 = int(input(print('Digite o segundo numero: ')))
+num3 = int(input(print('Digite o terceiro numero: ')))
+
+if num1 == 1:
+    media = num2 + num3 / 2
+    print(f'A media é {media}')
+
+elif num1 == 2:
+    if num2 > num3:
+        print(f'A diferença é {num2-num3}')
+    else:
+        print(f'A diferença é {num3-num2}')
+
+elif num1 == 3:
+    produto = num2 * num3
+    print(f'O produto é {produto}')
+elif num1 == 4:
+    if num3 != 0:
+        div = num2 / num3
+        print(f'A divisão é {div}')
+    else:
+        print(f'Segundo numero deve ser diferente de 0')
+else:
+    print('Opção invalida')

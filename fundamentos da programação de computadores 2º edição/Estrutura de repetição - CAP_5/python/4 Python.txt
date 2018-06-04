@@ -1,0 +1,7 @@
+
+numero = int(input(print("Digite o numero: ")))
+
+for contador in range(1, 11):
+    resposta = contador * numero
+    print(f'{contador} x {numero} = {resposta}')
+

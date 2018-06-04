@@ -1,0 +1,30 @@
+
+codigo = int(input(print('Digite o codigo: ')))
+quant = int(input(print('Digite a quantidade: ')))
+
+if 1 <= codigo <= 10:
+    print('O valor unitaro e R$10,00')
+    preco_total = 10 * quant
+if 11 <= codigo <= 20:
+    print('O valor unitaro e R$15,00')
+    preco_total = 15 * quant
+if 21 <= codigo <= 30:
+    print('O valor unitaro e R$20,00')
+    preco_total = 20 * quant
+if 31 <= codigo <= 40:
+    print('O valor unitaro e R$30,00')
+    preco_total = 30 * quant
+
+print(f'O preco da compra foi de: {preco_total}')
+
+if preco_total < 250:
+    preco_final = preco_total - preco_total * 0.05
+
+if 250 <= preco_total < 500:
+    preco_final = preco_total - preco_total * 0.10
+
+if preco_total >= 500:
+    preco_final = preco_total - preco_total * 0.15
+
+print(f'O preco final da compra foi de: {preco_final}')
+print(f'O valor de desconto foi de: {preco_total - preco_final}')

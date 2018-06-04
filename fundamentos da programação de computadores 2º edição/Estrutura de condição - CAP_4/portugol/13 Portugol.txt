@@ -1,0 +1,32 @@
+algoritmo "semnome"
+var
+valor : real
+
+inicio
+
+escreval("Digite o valor do produto: ")
+leia(valor)
+
+se valor > 100 entao
+   valor <- valor * 1.15
+
+se ( (valor < 100) e (valor > 50) ) entao
+   valor <- valor * 1.15
+
+se valor < 50 entao
+   valor <- valor 1.05
+
+se valor < 80 entao
+   escreval("O valor do produto é ", valor " e sua classificação é: Barato")
+
+se ((valor > 80) e ( valor >= 120)) entao
+   escreval("O valor do produto é ", valor " e sua classificação é: Normal")
+
+se ((valor > 120) e ( valor >= 200)) entao
+   escreval("O valor do produto é ", valor " e sua classificação é: Caro")
+
+se valor > 200 entao
+   escreval("O valor do produto é ", valor " e sua classificação é: Muito caro")
+
+fimalgoritmo
+

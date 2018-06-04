@@ -1,0 +1,27 @@
+
+idade = int(input(print('Digite a idade: ')))
+peso = int(input(print('Digite o peso: ')))
+
+if idade < 20:
+    if peso < 60:
+        print("9")
+    if 60 < peso <= 90:
+        print("8")
+    if peso > 90:
+        print("7")
+
+if 20 < idade <= 50:
+    if peso < 60:
+        print("6")
+    if 60 < peso <= 90:
+        print("5")
+    if peso > 90:
+        print("4")
+
+if idade > 50:
+    if peso < 60:
+        print("3")
+    if 60 < peso <= 90:
+        print("2")
+    if peso > 90:
+        print("1")

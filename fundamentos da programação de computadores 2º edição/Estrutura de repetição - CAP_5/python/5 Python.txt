@@ -1,0 +1,6 @@
+
+for numero in range(1, 11):
+    for contador in range(1, 11):
+        resposta = contador * numero
+        print(f'{contador} x {numero} = {resposta}')
+    print(f'\n')

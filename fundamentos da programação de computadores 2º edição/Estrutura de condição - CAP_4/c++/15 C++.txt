@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int valor, tipo;
+    cout << "Digite o tipo: " << endl;
+    cin >> tipo;
+    cout << "Digite o valor: " << endl;
+    cin >> valor;
+
+    if (tipo == 1) {
+        valor = valor * 1.03;
+    }
+
+    if (tipo == 2) {
+        valor = valor * 1.04;
+    }
+    cout << "O valor e " << valor;
+}

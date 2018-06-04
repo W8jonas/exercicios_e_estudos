@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+ percent1, percent2 : real
+ i, resposta, numero: inteiro
+ 
+inicio
+escreval("Digite o numero: ")
+leia(numero)
+
+
+para i de 1 ate 10 faca
+   resposta <- numero * i
+   escreval(resposta)
+fimpara
+
+fimalgoritmo
+

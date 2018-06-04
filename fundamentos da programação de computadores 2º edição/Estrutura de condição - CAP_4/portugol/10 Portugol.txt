@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+
+valor : real
+
+inicio
+
+escreval("Digite o valor do carro: ")
+leia(valor)
+
+se valor > 25000 entao
+   valor <- valor * 1.35
+   escreval("O custo do carro é :", valor)
+fimse
+
+se ((valor < 25000) e (valor > 12000)) entao
+   valor <- valor * 1.25
+   escreval("O custo do carro é :", valor)
+fimse
+
+se valor < 12000 entao
+   valor <- valor * 1.05
+   escreval("O custo do carro é :", valor)
+fimse
+
+fimalgoritmo
+

@@ -1,0 +1,133 @@
+
+for contador in range(1, 5):
+
+    a = int(input(print('Digite o primeiro numero: ')))
+    b = int(input(print('Digite o segundo numero: ')))
+    c = int(input(print('Digite o terceiro numero: ')))
+    d = int(input(print('Digite o quarto numero: ')))
+
+    if a > b and a > c and a > d:
+        primeiro = a
+        if b > c and b > c:
+            segundo = b
+            if c > d:
+                terceiro = c
+                quarto = d
+            else:
+                terceiro = d
+                quarto = c
+
+        if c > b and c > d:
+            segundo = c
+            if b > d:
+                terceiro = b
+                quarto = d
+            else:
+                terceiro = d
+                quarto = b
+
+        if d > b and d > c:
+            segundo = d
+            if b > c:
+                terceiro = b
+                quarto = c
+            else:
+                terceiro = c
+                quarto = b
+
+    if b > a and b > c and b > d:
+        primeiro = b
+        if a > c and a > c:
+            segundo = a
+            if c > d:
+                terceiro = c
+                quarto = d
+            else:
+                terceiro = d
+                quarto = c
+
+        if c > a and c > d:
+            segundo = c
+            if a > d:
+                terceiro = a
+                quarto = d
+            else:
+                terceiro = d
+                quarto = a
+
+        if d > b and d > c:
+            segundo = d
+            if a > c:
+                terceiro = a
+                quarto = c
+            else:
+                terceiro = c
+                quarto = a
+
+    if c > a and c > b and c > d:
+        primeiro = c
+        if a > b and a > d:
+            segundo = a
+            if c > d:
+                terceiro = c
+                quarto = d
+            else:
+                terceiro = d
+                quarto = c
+
+        if b > a and b > d:
+            segundo = b
+            if a > d:
+                terceiro = a
+                quarto = d
+            else:
+                terceiro = d
+                quarto = a
+
+        if d > b and d > c:
+            segundo = d
+            if a > b:
+                terceiro = a
+                quarto = b
+            else:
+                terceiro = b
+                quarto = a
+
+    if d > a and d > b and d > c:
+        primeiro = d
+        if a > b and a > c:
+            segundo = a
+            if c > b:
+                terceiro = c
+                quarto = b
+            else:
+                terceiro = b
+                quarto = c
+
+        if b > a and b > c:
+            segundo = b
+            if a > c:
+                terceiro = a
+                quarto = c
+            else:
+                terceiro = c
+                quarto = a
+
+        if c > b and c > a:
+            segundo = c
+            if a > b:
+                terceiro = a
+                quarto = b
+            else:
+                terceiro = b
+                quarto = a
+    vet_a = str(a)
+    vet_b = str(b)
+    vet_c = str(c)
+    vet_d = str(d)
+
+    print("_______________________________" + "_"*(len(vet_a) + len(vet_b) + len(vet_c) + len(vet_d)))
+    print(f'A ordem crescente é:   {quarto}, {terceiro}, {segundo} e {primeiro}.')
+    print(f'A ordem decrescente é: {primeiro}, {segundo}, {terceiro} e {quarto}.')
+    print("_______________________________" + "_" * (len(vet_a) + len(vet_b) + len(vet_c) + len(vet_d)))
+    print(" ")

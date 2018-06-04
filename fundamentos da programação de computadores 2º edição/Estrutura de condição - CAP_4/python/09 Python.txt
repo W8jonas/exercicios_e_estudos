@@ -1,0 +1,19 @@
+
+salario = int(input(print('Digite o salario do funcionario: ')))
+
+
+if salario > 400:
+    salario = salario * 1.3
+    print(f'O novo salario será de: {salario}')
+
+if 300 < salario <= 400:
+    salario = salario * 1.25
+    print(f'O novo salario será de: {salario}')
+
+if 200 < salario <= 300:
+    salario = salario * 1.20
+    print(f'O novo salario será de: {salario}')
+
+if salario <= 200:
+    salario = salario * 1.10
+    print(f'O novo salario será de: {salario}')

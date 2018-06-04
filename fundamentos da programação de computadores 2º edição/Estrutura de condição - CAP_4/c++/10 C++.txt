@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int valor ;
+
+    cout << "Digite o valor do carro: " << endl;
+    cin >> valor;
+
+    if (valor > 25000) {
+        valor = valor * 1.30;
+        cout << "O novo salario sera de: " << valor << endl;
+    }
+    
+    if ((valor <= 25000) & (valor > 12000)) {
+        valor = valor * 1.25;
+        cout << "O novo salario sera de: " << valor << endl;
+    }
+        
+    if (valor <= 12000) {
+        valor = valor * 1.1;
+        cout << "O novo salario sera de: " << valor << endl;
+    }
+    
+}

@@ -1,0 +1,13 @@
+valor = int(input(print('Digite o valor do carro: ')))
+
+if valor > 25000:
+    valor = valor * 1.35
+    print(f'O novo salario será de: {valor}')
+
+if 25000 < valor < 12000:
+    valor = valor * 1.25
+    print(f'O novo salario será de: {valor}')
+
+if valor <= 12000:
+    valor = valor * 1.05
+    print(f'O novo salario será de: {valor}')

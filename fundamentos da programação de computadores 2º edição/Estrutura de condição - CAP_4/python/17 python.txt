@@ -1,0 +1,7 @@
+
+valor = int(input(print('Digite a senha: ')))
+
+if valor == 4531:
+    print("Senha correta")
+else:
+    print("Senha incorreta")

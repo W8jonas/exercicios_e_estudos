@@ -1,0 +1,13 @@
+valor_final = 0
+valor = int(input(print('Digite o valor do produto: ')))
+
+if valor <= 30:
+    valor_final = valor
+
+if 30 < valor <= 100:
+    valor_final = valor * 1.10
+
+if valor > 100:
+    valor_final = valor * 1.15
+
+print(f'O valor do produto era {valor} e o novo valor é {valor_final}')

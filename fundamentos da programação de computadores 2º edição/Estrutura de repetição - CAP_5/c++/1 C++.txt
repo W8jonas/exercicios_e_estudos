@@ -1,0 +1,163 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    float a, b, c, d, primeiro, segundo, terceiro, quarto;
+
+    for(int i = 0; i < 5; i++){
+        cout << "Digite o primeiro numero: " << endl;
+        cin >> a;
+        cout << "Digite o segundo numero: " << endl;
+        cin >> b;
+        cout << "Digite o terceiro numero: " << endl;
+        cin >> c;
+        cout << "Digite o quarto numero: " << endl;
+        cin >> d;
+
+        if ((a >b) & (a > c) & (a >d)){
+            primeiro = a;
+            if ((b > c) & (b > d)){
+                segundo = b;
+                if (c > d) {
+                    terceiro = c;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = c;
+                }
+            }
+            if ((c > b) & (c > d)){
+                segundo = c;
+                if (b > d) {
+                    terceiro = b;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = b;
+                }
+            }
+            if ((d > c) & (d > c)){
+                segundo = d;
+                if (b > c) {
+                    terceiro = b;
+                    quarto = c;
+                }else{
+                    terceiro = c;
+                    quarto = b;
+                }
+            }
+        } // fim do primeiro
+
+        if ((b >a) & (b > c) & (b >d)){
+            primeiro = b;
+            if ((a > c) & (a > d)){
+                segundo = a;
+                if (c > d) {
+                    terceiro = c;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = c;
+                }
+            }
+            if ((c > a) & (c > d)){
+                segundo = c;
+                if (b > d) {
+                    terceiro = a;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = a;
+                }
+            }
+            if ((d > a) & (d > c)){
+                segundo = d;
+                if (a > c) {
+                    terceiro = a;
+                    quarto = c;
+                }else{
+                    terceiro = c;
+                    quarto = a;
+                }
+            }
+        } // fim do segundo
+
+        if ((c > b) & (c > a) & (c > d)){
+            primeiro = c;
+            if ((b > a) & (b > d)){
+                segundo = b;
+                if (a > d) {
+                    terceiro = a;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = a;
+                }
+            }
+            if ((a > b) & (c > d)){
+                segundo = a;
+                if (b > d) {
+                    terceiro = b;
+                    quarto = d;
+                }else{
+                    terceiro = d;
+                    quarto = b;
+                }
+            }
+            if ((d > b) & (d > a)){
+                segundo = d;
+                if (b > a) {
+                    terceiro = b;
+                    quarto = a;
+                }else{
+                    terceiro = a;
+                    quarto = b;
+                }
+            }
+        } // fim do terceiro
+
+        if ((d > a) & (d > b) & (d > c)){
+            primeiro = d;
+            if ((b > c) & (b > a)){
+                segundo = b;
+                if (c > a) {
+                    terceiro = c;
+                    quarto = a;
+                }else{
+                    terceiro = a;
+                    quarto = c;
+                }
+            }
+            if ((c > b) & (c > a)){
+                segundo = c;
+                if (b > a) {
+                    terceiro = b;
+                    quarto = a;
+                }else{
+                    terceiro = a;
+                    quarto = b;
+                }
+            }
+            if ((a > b) & (a > c)){
+                segundo = a;
+                if (b > c) {
+                    terceiro = b;
+                    quarto = c;
+                }else{
+                    terceiro = c;
+                    quarto = b;
+                }
+            }
+        } // fim do quarto
+
+        cout << "\nNa ordem crescente temos:   " << quarto << terceiro << segundo << primeiro;
+        cout << "\nNa ordem decrescente temos: " << primeiro << segundo << terceiro << quarto;
+        cout << "\n";
+
+    } // fim do for
+}   // fim main

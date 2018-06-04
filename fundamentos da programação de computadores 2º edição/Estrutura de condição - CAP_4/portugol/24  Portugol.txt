@@ -1,0 +1,65 @@
+algoritmo "semnome"
+var
+
+preco, categoria, preco_total: real
+situacao : literal
+
+inicio
+
+escreval("Digite o preco: ")
+leia(preco)
+
+escreval("Digite a categoria: ")
+leia(categoria)
+
+escreval("Digite a situação: ")
+leia(situacao)
+
+se preco <= 25 entao
+   se categoria = 1 entao
+      preco_total <- preco * 1.05
+   fimse
+   se categoria = 2 entao
+      preco_total <- preco * 1.08
+   fimse
+   se categoria = 3 entao
+      preco_total <- preco * 1.10
+   fimse
+senao
+   se categoria = 1 entao
+      preco_total <- preco * 1.12
+   fimse
+   se categoria = 2 entao
+      preco_total <- preco * 1.15
+   fimse
+   se categoria = 3 entao
+      preco_total <- preco * 1.18
+   fimse
+fimse
+
+escreval("O valor do aumento foi de:", preco_total - preco)
+
+se ((situacao = "R") ou (categoria = 2)) entao
+   preco_total <- preco_total - preco_total * 0.05
+   escreval("O valor do imposto foi de:", preco_total * 0.05)
+senao
+   preco_total <- preco_total - preco_total * 0.08
+   escreval("O valor do imposto foi de:", preco_total * 0.08)
+fimse
+
+escreva("O novo preco e:", preco_total)
+
+se preco_total < 50 entao
+   escreval("Barato")
+fimse
+
+se ((preco_total > 50) e (preco_total < 120)) entao
+   escreval("Normal")
+fimse
+
+se preco_total >= 120 entao
+   escreval("Caro")
+fimse
+
+fimalgoritmo
+

@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    float num1, num2, num3, div, resposta, media, produto ;
+
+    cout << "Digite o codigo: " << endl;
+    cin >> num1;
+
+    if (num1 <= 4) {
+        cout << "Digite o primeiro numero: " << endl;
+        cin >> num2;
+        cout << "Digite o segundo numero: " << endl;
+        cin >> num3;
+        if  (num1 == 1) {
+            media = (num2 + num3) / 2;
+            cout << "A media e: " << media << endl;
+        }else{
+            if (num1 == 2) {
+                if (num2 > num3) {
+                    resposta = num2 - num3;
+                    cout << "A diferença e: " << resposta << endl;
+                }else{
+                    resposta = num3 - num2;
+                    cout << "A diferença e: " << resposta << endl;
+                }
+            }else{
+                if (num1 == 3) {
+                    produto = num2 * num3;
+                    cout << "O produto e: " << produto << endl;
+                }else{
+                    if (num3 == 0) {
+                        cout << "O segundo numero é 0 " << endl;
+                    }else{
+                        div = num2 / num3;
+                        cout << "A divisao e: " << div << endl;
+                    }
+                }
+            }
+        }
+
+    }else{
+        cout << "Codigo invalido" << endl;
+    }
+
+}

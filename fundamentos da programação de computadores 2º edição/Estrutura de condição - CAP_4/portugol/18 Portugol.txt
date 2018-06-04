@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+idade: real
+
+inicio
+
+escreval("Digite a idade: ")
+leia(idade)
+
+se idade > 18 entao
+   escreval("Maior de idade")
+senao
+   escreval("Menor de idade")
+fimse
+
+fimalgoritmo
+

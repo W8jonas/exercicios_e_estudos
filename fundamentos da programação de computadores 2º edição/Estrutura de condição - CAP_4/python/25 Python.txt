@@ -1,0 +1,21 @@
+
+hora_extra = int(input(print('Digite a quantidade de horas extras: ')))
+horas = int(input(print('Digite as horas trabalhadas: ')))
+falta = int(input(print('Digite as faltas: ')))
+
+h = hora_extra - (2/3 * (horas - falta))
+
+if h < 600:
+    print("Premio de R$100,00")
+
+if 600 <= h < 1200:
+    print("Premio de R$200,00")
+
+if 1200 <= h < 1800:
+    print("Premio de R$300,00")
+
+if 1800 <= h < 2400:
+    print("Premio de R$400,00")
+
+if h >= 2400:
+    print("Premio de R$500,00")

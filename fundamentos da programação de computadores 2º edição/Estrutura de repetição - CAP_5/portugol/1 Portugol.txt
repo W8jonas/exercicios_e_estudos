@@ -1,0 +1,166 @@
+algoritmo "semnome"
+var
+
+a, b, c, d, primeiro, segundo, terceiro, quarto: real
+i : inteiro
+
+inicio
+para i de 1 ate 4 faca
+
+   escreval("Digite o primeiro numero: ")
+   leia(a)
+   escreval("Digite o segundo numero: ")
+   leia(b)
+   escreval("Digite o terceiro numero: ")
+   leia(c)
+   escreval("Digite o quarto numero: ")
+   leia(d)
+
+   se ((a > b) e (a > c) e (a > d)) entao
+      primeiro <- a
+      se ((b > c) e (b > d)) entao
+         segundo <- b
+         se c > d entao
+            terceiro <- c
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- c
+         fimse
+      fimse
+      se ((c > b) e (c > d)) entao
+         segundo <- c
+         se b > d entao
+            terceiro <- b
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- b
+         fimse
+      fimse
+      se ((d > b) e (d > c)) entao
+         segundo <- d
+         se b > c entao
+            terceiro <- b
+            quarto <- c
+         senao
+            terceiro <- c
+            quarto <- b
+         fimse
+      fimse
+   fimse
+   
+   
+   
+   
+   se ((b > a) e (b > c) e (b > d)) entao
+      primeiro <- b
+      se ((a > c) e (a > d)) entao
+         segundo <- a
+         se c > d entao
+            terceiro <- c
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- c
+         fimse
+      fimse
+      se ((c > a) e (c > d)) entao
+         segundo <- c
+         se a > d entao
+            terceiro <-a
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- a
+         fimse
+      fimse
+      se ((d > a) e (d > c)) entao
+         segundo <- d
+         se a > c entao
+            terceiro <- a
+            quarto <- c
+         senao
+            terceiro <- c
+            quarto <- a
+         fimse
+      fimse
+   fimse
+
+
+
+   se ((c > b) e (c > a) e (c > d)) entao
+      primeiro <- c
+      se ((b > a) e (b > d)) entao
+         segundo <- b
+         se a > d entao
+            terceiro <- a
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- a
+         fimse
+      fimse
+      se ((a > b) e (a > d)) entao
+         segundo <- a
+         se b > d entao
+            terceiro <- b
+            quarto <- d
+         senao
+            terceiro <- d
+            quarto <- b
+         fimse
+      fimse
+      se ((d > b) e (d > a)) entao
+         segundo <- d
+         se b > a entao
+            terceiro <- b
+            quarto <- a
+         senao
+            terceiro <- a
+            quarto <- b
+         fimse
+      fimse
+   fimse
+   
+
+   se ((d > a) e (d > b) e (d > c)) entao
+      primeiro <- d
+      se ((b > c) e (b > a)) entao
+         segundo <- b
+         se c > a entao
+            terceiro <- c
+            quarto <- a
+         senao
+            terceiro <- a
+            quarto <- c
+         fimse
+      fimse
+      se ((c > b) e (c > a)) entao
+         segundo <- c
+         se b > a entao
+            terceiro <- b
+            quarto <- a
+         senao
+            terceiro <- a
+            quarto <- b
+         fimse
+      fimse
+      se ((a > b) e (a > c)) entao
+         segundo <- a
+         se b > c entao
+            terceiro <- b
+            quarto <- c
+         senao
+            terceiro <- c
+            quarto <- b
+         fimse
+      fimse
+   fimse
+
+escreval("Na ordem crescente temos:   ", quarto,", ", terceiro,", ", segundo,", ", primeiro,". ")
+escreval("Na ordem decrescente temos: ", primeiro,", ", segundo,", ", terceiro,", ", quarto,". ")
+escreval("__________________________________________")
+escreval(" ")
+fimpara
+fimalgoritmo

@@ -1,0 +1,39 @@
+algoritmo "semnome"
+var
+
+h, hora_extra, horas, falta: real
+
+inicio
+
+escreval("Digite a quantidade de horas extras: ")
+leia(hora_extra)
+
+escreval("Digite as horas trabalhadas: ")
+leia(horas)
+
+escreval("Digite as faltas: ")
+leia(falta)
+
+h <- hora_extra - ( 2/3 * (horas - falta))
+
+se h < 600 entao
+   escreval("Premio de R$100,00")
+fimse
+
+se ((h >= 600) e (h < 1200)) entao
+   escreval("Premio de R$200,00")
+fimse
+
+se ((h >= 1200) e (h < 1800)) entao
+   escreval("Premio de R$300,00")
+fimse
+
+se ((h >= 1800) e (h < 2400)) entao
+   escreval("Premio de R$400,00")
+fimse
+
+se h > 2400 entao
+   escreval("Premio de R$500,00")
+fimse
+
+fimalgoritmo

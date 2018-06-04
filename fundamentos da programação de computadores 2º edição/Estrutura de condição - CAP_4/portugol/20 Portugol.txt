@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+
+idade: real
+
+inicio
+
+escreval("Digite a idade: ")
+leia(idade)
+
+    se (idade < 5)entao
+         escreval("Menor de 5 anos")
+    fimse
+    se ((idade >= 5) e (idade <=7))entao
+         escreval("Infantil")
+    fimse
+    se ((idade >= 7) e (idade <=10))entao
+         escreval("Juvenil")
+    fimse
+    se ((idade >= 11) e (idade <=15))entao
+         escreval("Adolescente")
+    fimse
+    se ((idade >= 16) e (idade <=30))entao
+         escreval("Adulto")
+    fimse
+    se (idade > 30)entao
+         escreval("Senior")
+    fimse
+
+fimalgoritmo

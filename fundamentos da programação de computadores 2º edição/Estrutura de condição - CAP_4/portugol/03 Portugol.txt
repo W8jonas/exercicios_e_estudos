@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+num1, num2 : real
+
+inicio
+
+escreval("Digite a primeira nota")
+leia(num1)
+
+escreval("Digite a segunda nota")
+leia(num2)
+
+
+ se ( num1 > num2 ) entao
+    escreval(num1, " maior que", num2)
+ senao
+     escreval(num2, " maior que", num1)
+ fimse
+ 
+fimalgoritmo

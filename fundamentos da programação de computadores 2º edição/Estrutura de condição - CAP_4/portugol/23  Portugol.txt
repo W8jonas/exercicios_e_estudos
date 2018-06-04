@@ -1,0 +1,49 @@
+algoritmo "semnome"
+var
+
+codigo, quant, preco_total, preco_final: real
+
+inicio
+
+escreval("Digite o codigo do produto: ")
+leia(codigo)
+
+escreval("Digite a quantidade: ")
+leia(quant)
+
+se ((codigo >= 1) e (codigo <= 10)) entao
+   escreval("O valor unitario é R$10,00")
+   preco_total <- 10 * quant
+fimse
+
+se ((codigo >= 11) e (codigo <= 20)) entao
+   escreval("O valor unitario é R$15,00")
+   preco_total <- 15 * quant
+fimse
+
+se ((codigo >= 21) e (codigo <= 30)) entao
+   escreval("O valor unitario é R$20,00")
+   preco_total <- 20 * quant
+fimse
+
+se ((codigo >= 31) e (codigo <= 40)) entao
+   escreval("O valor unitario é R$30,00")
+   preco_total <- 30 * quant
+fimse
+
+escreval("O preço da compra foi de: ", preco_total)
+
+se preco_total < 250 entao
+   preco_final <- preco_total - preco_total * 0.05
+fimse
+se ((preco_total >= 250) e (preco_total < 500)) entao
+   preco_final <- preco_total - preco_total * 0.1
+fimse
+se preco_total >= 500 entao
+   preco_final <- preco_total - preco_total * 0.15
+fimse
+
+escreval("O preço final da compra foi de: ", preco_final)
+escreval("O valor do desconto foi de: ", preco_total - preco_final)
+
+fimalgoritmo

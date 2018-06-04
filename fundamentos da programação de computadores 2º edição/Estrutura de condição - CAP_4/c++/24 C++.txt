@@ -1,0 +1,65 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    float preco, categoria, preco_total;
+    char situacao;
+
+    cout << "Digite o preco: " << endl;
+    cin >> preco;
+    cout << "Digite a categoria: " << endl;
+    cin >> categoria;
+    cout << "Digite a situacao: " << endl;
+    cin >> situacao;
+
+    if (preco <= 25) {
+        if(categoria == 1){
+            preco_total = preco * 1.05;
+        }
+        if(categoria == 2){
+            preco_total = preco * 1.08;
+        }
+        if(categoria == 3){
+            preco_total = preco * 1.10;
+        }
+    }else{
+        if(categoria == 1){
+            preco_total = preco * 1.12;
+        }
+        if(categoria == 2){
+            preco_total = preco * 1.15;
+        }
+        if(categoria == 3){
+            preco_total = preco * 1.18;
+        }
+    }
+
+    cout << "\nO valor do aumento foi de: " << preco_total - preco;
+
+    if ((situacao == 'R') | (categoria ==2)){
+        preco_total = preco_total - preco_total * 0.05;
+        cout << "\nO valor do imposto foi de: " << preco_total * 0.05;
+    }else{
+        preco_total = preco_total - preco_total * 0.08;
+        cout << "\nO valor do imposto foi de: " << preco_total * 0.08;
+    }
+
+    cout << "\nO novo preco e de: " << preco_total << "\n";
+
+    if (preco_total < 50) {
+        cout << "Barato";
+    }
+    if ((preco_total >= 50) & (preco_total <= 120)) {
+        cout << "Normal";
+    }
+    if (preco_total > 120) {
+        cout << "Caro";
+    }
+
+}
+

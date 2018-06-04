@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+valor, valor_final : real
+
+inicio
+
+escreval("Digite o valor do produto: ")
+leia(valor)
+
+se valor > 100 entao
+   valor_final <- valor * 1.15
+fimse
+
+se ((valor <= 100) e (valor > 30)) entao
+   valor_final <- valor * 1.10
+fimse
+
+se valor <= 30 entao
+   valor_final <- valor
+fimse
+
+escreval("O valor do produto era:", valor, " O novo valor é:", valor_final)
+
+fimalgoritmo

@@ -1,0 +1,52 @@
+algoritmo "semnome"
+var
+
+idade, peso: real
+
+inicio
+
+escreval("Digite o peso: ")
+leia(peso)
+
+escreval("Digite a idade: ")
+leia(idade)
+
+
+se (idade < 20) entao
+   se (peso < 60) entao
+      escreval("9")
+   fimse
+   se ((peso > 60) e (peso <= 90)) entao
+      escreval("8")
+   fimse
+   se (peso > 90) entao
+      escreval("7")
+   fimse
+fimse
+
+se ((idade > 20) e (idade < 50)) entao
+   se (peso < 60) entao
+      escreval("6")
+   fimse
+   se ((peso > 60) e (peso <= 90)) entao
+      escreval("5")
+   fimse
+   se (peso > 90) entao
+      escreval("4")
+   fimse
+fimse
+
+se (idade > 50) entao
+   se (peso < 60) entao
+      escreval("3")
+   fimse
+   se ((peso > 60) e (peso <= 90)) entao
+      escreval("2")
+   fimse
+   se (peso > 90) entao
+      escreval("1")
+   fimse
+fimse
+
+
+fimalgoritmo

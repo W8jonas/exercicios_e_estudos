@@ -1,0 +1,8 @@
+
+salario = int(input(print('Digite o salario do funcionario: ')))
+
+if salario <500:
+    salario = salario * 1.3
+    print(f'O novo salario será de: {salario}')
+else:
+    print('Nao tem direito ao aumento')

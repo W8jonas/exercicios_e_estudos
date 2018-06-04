@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int idade;
+    cout << "Digite a idade: " << endl;
+    cin >> idade;
+
+    if (idade < 5){
+        cout << "Menor de 5 anos";
+    }
+    if ((idade >= 5) & (idade <=7)){
+        cout << "Infantil";
+    }
+    if ((idade >= 7) & (idade <=10)){
+        cout << "Juvenil";
+    }
+    if ((idade >= 11) & (idade <=15)){
+        cout << "Adolescente";
+    }
+    if ((idade >= 16) & (idade <=30)){
+        cout << "Adulto";
+    }
+    if (idade > 30){
+        cout << "Senior";
+    }
+
+}

@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+salario : real
+
+inicio
+
+escreval("Digite o salario: ")
+leia(salario)
+
+se salario > 400 entao
+   salario <- salario * 1.30
+   escreval("O novo salario é :", salario)
+fimse
+
+se ((salario <= 400) e (salario > 300)) entao
+   salario <- salario * 1.25
+   escreval("O novo salario é :", salario)
+fimse
+
+se ((salario <= 300) e (salario > 200)) entao
+   salario <- salario * 1.2
+   escreval("O novo salario é :", salario)
+fimse
+
+se salario <= 200 entao
+   salario <- salario * 1.1
+   escreval("O novo salario é :", salario)
+fimse
+
+fimalgoritmo

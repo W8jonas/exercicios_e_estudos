@@ -1,0 +1,20 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int idade;
+
+    cout << "Digite a idade: " << endl;
+    cin >> idade;
+
+    if (idade > 18) {
+        cout << "Maior de idade";
+    }else{
+        cout << "Menor de idade";
+    }
+}

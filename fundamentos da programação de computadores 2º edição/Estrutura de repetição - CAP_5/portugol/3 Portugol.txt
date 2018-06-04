@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+ percent1, percent2 : real
+ i, cont1, cont2, cont3, cont4, cont5, idade : inteiro
+ 
+inicio
+
+para i de 1 ate 15 faca
+   escreval("Digite a idade: ")
+   leia(idade)
+   
+   se idade <= 15 entao
+      cont1 <- cont1 + 1
+   fimse
+   
+   se ((idade >= 16) e (idade <= 30)) entao
+      cont2 <- cont2 + 1
+   fimse
+   
+   se ((idade >= 31) e (idade <= 45)) entao
+      cont3 <- cont3 + 1
+   fimse
+   
+   se ((idade >= 46) e (idade <= 60)) entao
+      cont4 <- cont4 + 1
+   fimse
+   
+   se (idade > 60)entao
+      cont5 <- cont5 + 1
+   fimse
+fimpara
+escreval("O numero de pessoas em cada faixa etária é, respectivamente: ", cont1, " ", cont2, " ", cont3, " ", cont4, " ", cont5)
+percent1 <- 100 * cont1 / 15
+percent2 <- 100 * cont5 / 15
+escreval(" A porcentagem de pessoas que estao na primeira faixa etária é:", percent1)
+escreval(" A porcentagem de pessoas que estao na ultima faixa etária é:", percent2)
+
+fimalgoritmo

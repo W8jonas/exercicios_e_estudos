@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+ ingresso, vendas, lucro : real
+ i : inteiro
+ 
+inicio
+ingresso <- 5.0
+vendas <- 120
+
+para i de 1 ate 9 faca
+   lucro <- ingresso * vendas - 200
+   escreval("O lucro será de: ", lucro, " com ingresso custando ", ingresso, " e um total de vendas de ", vendas)
+   vendas <- vendas + 26
+   ingresso <- ingresso - 0.50
+fimpara
+
+fimalgoritmo
+

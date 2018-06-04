@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    float num1, num2, num3;
+
+    cout << "Digite o primeiro numero: " << endl;
+    cin >> num1;
+    cout << "Digite o segundo numero: " << endl;
+    cin >> num2;
+    cout << "Digite o segundo numero: " << endl;
+    cin >> num3;
+
+    if ( (num1 > num2) & (num1 > num3) ) {
+        cout << "O numero maior e o "<< num1 << endl;
+    }else{
+        if ( (num2 > num1) & (num2 > num3) ) {
+            cout << "O numero maior e o "<< num2 << endl;
+        }else{
+            cout << "O numero maior e o "<< num3 << endl;
+        }
+    }
+}

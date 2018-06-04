@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    int valor, valor_final;
+
+    cout << "Digite o valor do produto: " << endl;
+    cin >> valor;
+
+    if (valor <= 30) {
+        valor_final = valor;
+    }
+
+    if ((valor > 30)&(valor <= 100)) {
+        valor_final = valor * 1.10;
+    }
+
+    if (valor > 100){
+        valor_final = valor * 1.15;
+    }
+
+    cout << "O valor era: " << valor << "\nO novo valor e: " << valor_final;
+}

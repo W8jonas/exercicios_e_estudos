@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+valor, tipo : real
+
+inicio
+
+escreval("Digite o tipo: ")
+leia(tipo)
+
+escreval("Digite o valor: ")
+leia(valor)
+
+se tipo = 1 entao
+   valor <- valor * 1.03
+fimse
+
+se tipo = 2 entao
+   valor <- valor * 1.04
+fimse
+
+escreval("O novo valor é :", valor)
+
+fimalgoritmo

@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+ idade, peso, altura, media_altura : real
+ i, cont, cont1, cont2 : inteiro
+ codigo : literal
+
+inicio
+
+para i de 1 ate 25 faca
+   escreva("Digite a idade: ")
+   leia(idade)
+   escreva("Digite o peso: ")
+   leia(peso)
+   escreva("Digite a altura: ")
+   leia(altura)
+   
+   se idade > 50 entao
+      cont <- cont + 1
+   fimse
+   se ((idade >= 10) e (idade <= 20)) entao
+      cont2 <- cont2 + 1
+      media_altura <- media_altura + altura
+   fimse
+   se peso < 40 entao
+      cont3 <- cont3 + 1
+   fimse
+fimpara
+
+escreval("A quantidade de pessoas com idade superior a 50 anos é: ", cont)
+escreval("A media das alturas das pessoas com idade entre 10 e 20 anos é: ", media_altura / cont2)
+escreval("A porcentagem de pessoas com peso inferior a 40 quilos é: ", cont3 * 100 / 25)
+
+fimalgoritmo

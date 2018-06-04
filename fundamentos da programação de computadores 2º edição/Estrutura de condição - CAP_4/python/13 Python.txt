@@ -1,0 +1,21 @@
+
+valor = int(input(print('Digite o valor do produto: ')))
+
+if valor > 100:
+    valor = valor * 1.15
+
+if valor <= 50:
+    valor = valor * 1.05
+
+if ((valor > 50) and (valor <= 100)):
+    valor = valor + valor*0.10
+
+
+if valor > 200:
+    print(f'O produto custa {valor}\nClassificação: Muito caro')
+if 80 > valor:
+    print(f'O produto custa {valor}\nClassificação: Barato')
+if 80 > valor >= 120:
+    print(f'O produto custa {valor}\nClassificação: Normal')
+if 120 > valor >= 200:
+    print(f'O produto custa {valor}\nClassificação: Caro')

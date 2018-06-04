@@ -1,0 +1,25 @@
+codigo = int(input(print('Digite o codigo: ')))
+
+if codigo == 1:
+    print("Sul")
+
+if codigo == 2:
+    print("Norte")
+
+if codigo == 3:
+    print("Leste")
+
+if codigo == 4:
+    print("Oeste")
+
+if (codigo == 5) or (codigo == 6):
+    print("Nordeste")
+
+if (codigo >= 7) and (codigo <=9):
+    print("Sudeste")
+
+if (codigo >= 10) and (codigo <=20):
+    print("Centro-oeste")
+
+if (codigo >= 20) and (codigo <=30):
+    print( "Nordeste")

@@ -1,0 +1,51 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+
+    float codigo, quant, preco_total, preco_final;
+    cout << "Digite o codigo: " << endl;
+    cin >> codigo;
+    cout << "Digite a quantidade: " << endl;
+    cin >> quant;
+
+    if ((codigo >= 1) & (codigo <= 10)){
+        cout << "O valor unitario e R$10,00";
+        preco_total = 10 * quant;
+    }
+
+    if ((codigo >= 11) & (codigo <= 20)){
+        cout << "O valor unitario e R$15,00";
+        preco_total = 15 * quant;
+    }
+
+    if ((codigo >= 21) & (codigo <= 30)){
+        cout << "O valor unitario e R$20,00";
+        preco_total = 20 * quant;
+    }
+
+    if ((codigo >= 31) & (codigo <= 40)){
+        cout << "O valor unitario e R$30,00";
+        preco_total = 30 * quant;
+    }
+
+    cout << "\nO preco da compra foi de: " << preco_total;
+
+    if (preco_total < 250) {
+        preco_final = preco_total - preco_total * 0.05;
+    }
+    if ((preco_total >= 250) & (preco_total <= 500)) {
+        preco_final = preco_total - preco_total * 0.1;
+    }
+    if (preco_total > 500) {
+        preco_final = preco_total - preco_total * 0.15;
+    }
+
+    cout << "\nO preco final da compra foi de: " << preco_final;
+    cout << "\nO preco da compra foi de: " << preco_total - preco_final;
+}
+

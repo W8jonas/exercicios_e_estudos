@@ -1,0 +1,21 @@
+
+num1 = int(input(print('Escolha a operação: ')))
+num2 = int(input(print('Digite o segundo numero: ')))
+num3 = int(input(print('Digite o terceiro numero: ')))
+
+if num1 == 1:
+    resposta = pow(num2, num3)
+    print(f'O primeiro numero elevado ao segundo e: {resposta}')
+
+elif num1 == 2:
+    resposta = pow(num2, 1/2)
+    print(f'A raiz quadrada do primeiro numero é: {resposta}')
+    resposta = pow(num3, 1 / 2)
+    print(f'A raiz quadrada do segundo numero é: {resposta}')
+elif num1 == 3:
+    resposta = pow(num2, 1 / 3)
+    print(f'A raiz quadrada do primeiro numero é: {resposta}')
+    resposta = pow(num3, 1 / 3)
+    print(f'A raiz quadrada do segundo numero é: {resposta}')
+else:
+    print('Opção invalida')
